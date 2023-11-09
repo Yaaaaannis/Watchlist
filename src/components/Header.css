@@ -1,0 +1,207 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: #141414a6;
+    transition: all ease 0.5s;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.header-buttons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-button {
+    display: flex;
+    /* pour aligner le bouton et la barre de recherche */
+    align-items: center;
+    position: relative;
+}
+
+.search-button button {
+    background-color: transparent;
+    /* fond transparent pour le bouton */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-button svg {
+    width: 100%;
+    /* SVG will take the full width of the button */
+    height: auto;
+    /* SVG height will scale automatically */
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+.header-user {
+    height: 50px;
+}
+
+.header-watchlist {
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.header-watchlist:hover {
+    /* background-color: #e50914; */
+    opacity: 0.7;
+    color: white;
+    transition: 0.8s;
+}
+
+.movie-point {
+    color: #46d369;
+}
+
+.header-user img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    /* pour l'espace entre le bouton et la barre de recherche */
+    outline: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* arrière-plan semi-transparent */
+    width: 0;
+    transition: width 0.5s ease-in-out;
+    cursor: pointer;
+    width: 200px;
+    /* la largeur de la barre de recherche quand elle est active */
+    cursor: text;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* le même fond pour rester cohérent */
+
+}
+
+
+
+.search-button button:focus {
+    outline: none;
+}
+
+/* Vous pouvez également ajouter une animation lorsque la barre de recherche apparaît */
+.search-button input[type="text"]:not(:placeholder-shown) {
+    width: 200px;
+    transition: 1.5s;
+}
+
+.search-submit {
+    color: white;
+    background-color: #e50914;
+    border: 2px solid #e50914;
+}
+
+.modal-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 2;
+    /* Ensure it's above other content */
+
+}
+
+.modal-content {
+    background: black;
+    padding: 60px 15px;
+    border-radius: 15px;
+    text-align: center;
+    /* Centers the content text */
+    max-width: 700px;
+    /* Adjust as needed */
+    max-height: 90%;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Enables scroll if content is too tall */
+    overflow-y: hidden;
+}
+
+.modal-content img {
+    max-width: 100%;
+    /* Ensures image is not larger than the modal */
+    max-height: 300px;
+    /* Adjust as needed */
+    object-fit: contain;
+    /* Keeps aspect ratio and fits within dimensions */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
+
+/* Add styles for the title and the overview if needed */
+.modal-content h3 {
+    margin-top: 20px;
+    color: white,
+}
+
+.modal-content p {
+    margin-top: 10px;
+    text-align: justify;
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .modal-background {
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+
+        /* Aligns the content to the top */
+
+    }
+
+    .details-name {
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 15%;
+    }
+
+    .details-description {
+        font-size: 10px;
+        padding-top: 0px;
+        width: 80%;
+    }
+
+    form {
+        width: 40%
+    }
+}

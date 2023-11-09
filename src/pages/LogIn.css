@@ -1,0 +1,61 @@
+.logInContainer {
+    position: fixed;
+    /* ou 'fixed' si vous voulez qu'il reste centré lors du défilement */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+}
+
+.logInPage {
+    overflow: hidden;
+}
+
+.logInLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.logInLogo img {
+    width: 200px;
+    height: 200px;
+}
+
+.logInBtn {
+    text-align: center;
+
+    /* Centrage horizontal du texte */
+
+    /* Pour le centrage vertical, il faut que la hauteur de ligne soit égale à la hauteur du bouton */
+    /* Supposons que votre bouton ait une hauteur de 40px */
+    height: 40px;
+    line-height: 40px;
+    /* Cela centre le texte verticalement si le bouton n'a qu'une ligne de texte */
+    margin-top: 50px;
+    /* Ajoutez vos autres styles */
+    padding: 0px 30px;
+    /* Le padding horizontal pour le bouton, peut être ajusté selon le design */
+    border: none;
+    /* Supprimer la bordure par défaut si désiré */
+    border-radius: 5px;
+    /* Pour les coins arrondis */
+    background-color: rgb(255, 30, 0);
+    /* Couleur de fond */
+    color: white;
+    /* Couleur du texte */
+    font-size: 16px;
+    /* Taille de la police */
+    cursor: pointer;
+    /* Change le curseur en main lorsque vous survolez le bouton */
+    transition: 1s;
+}
+
+.logInBtn:hover {
+    transform: scale(1.1);
+}

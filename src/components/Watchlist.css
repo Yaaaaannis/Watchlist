@@ -1,0 +1,91 @@
+.watchlist {
+    padding-top: 50px;
+}
+
+
+.intro {
+    /* Styles pour l'introduction */
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.movie-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.watchlist-item {
+    /* Styles pour chaque élément de la watchlist */
+    display: flex;
+    ;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 10px 0;
+}
+
+.watchlist-item img {
+    /* Styles pour les images des films */
+    width: 100px;
+    height: auto;
+
+    margin-right: 10px;
+}
+
+.overview {
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #999;
+
+}
+
+.watchlistbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all ease 0.2s;
+
+}
+
+.details-watchbutton {
+    cursor: pointer;
+}
+
+.movie-date {
+    padding-top: 5px;
+    margin-right: 15px;
+    display: inline-block;
+    padding-left: 20px;
+    color: white
+}
+
+.movie-point {
+    padding-left: 20px;
+}
+
+@media (max-width: 760px) {
+    .overview {
+        font-size: 8px;
+        width: 80%;
+    }
+
+    .movie-title {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .movie-date {
+        font-size: 7px;
+    }
+
+    .movie-point {
+        font-size: 7px;
+    }
+}
